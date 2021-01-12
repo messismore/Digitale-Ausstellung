@@ -1,4 +1,4 @@
-# Digitale-Ausstellung
+# Digitale-Ausstellung: Architecture Theses Showcase of Universität der Künste Berlin
 
 ## Build Setup
 

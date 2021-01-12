@@ -1,0 +1,19 @@
+/* We use a harmonic scale of dimensions */
+@import url('~assets/css/scale.css');
+@import url('~assets/css/typography.css');
+@import url('~assets/css/utilities.css');
+
+:root {
+  font-family: 'Helvetica Neue', -apple-system, Arial, sans-serif;
+  font-size: var(--step-0);
+  line-height: var(--step-1);
+  -ms-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+}

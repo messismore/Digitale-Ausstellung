@@ -1,0 +1,8 @@
+/*
+Utility classes are modelled after https://tailwindcss.com/ wherever applicable.
+
+Declarations are trailed by an "!important" to override selector specificity.
+*/
+
+@import url('~assets/css/utilities/grid-column-start-end.css');
+@import url('~assets/css/utilities/grid-row-start-end.css');
