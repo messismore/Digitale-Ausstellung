@@ -1,49 +1,54 @@
 <template>
-  <div class="work">
-    <ul>
-      <li>{{ work.kind }} by {{ work.author }}</li>
-      <li>
-        <NuxtLink
-          :to="{
-            name: 'terms-term',
-            params: { term: `work.term.split(' ').join('-')` },
-          }"
-        >
-          {{ work.term }}
-        </NuxtLink>
-      </li>
-      <ul class="inline">
-        <span>Advisors:</span>
-        <li v-for="advisor in work.advisors" :key="advisor">
+  <main class="work">
+    <header>
+      <ul>
+        <li>{{ work.kind }} by {{ work.author }}</li>
+        <li>
           <NuxtLink
             :to="{
-              name: 'slug',
-              params: {
-                person: advisor,
-                slug: advisor.split(' ').join('-'),
-              },
+              name: 'terms-term',
+              params: { term: `work.term.split(' ').join('-')` },
             }"
           >
-            {{ advisor }},
+            <time :datetime="work.date">
+              {{ work.term }}
+            </time>
           </NuxtLink>
         </li>
+        <ul class="inline">
+          <span>Advisors:</span>
+          <li v-for="advisor in work.advisors" :key="advisor">
+            <NuxtLink
+              :to="{
+                name: 'slug',
+                params: {
+                  person: advisor,
+                  slug: advisor.split(' ').join('-'),
+                },
+              }"
+            >
+              {{ advisor }},
+            </NuxtLink>
+          </li>
+        </ul>
+        <ul class="inline">
+          <li v-for="topic in work.topics" :key="topic">
+            <NuxtLink
+              :to="{
+                name: 'topics.slug',
+                params: { slug: topic.split(' ').join('-'), topic: topic },
+              }"
+            >
+              #{{ topic }}
+            </NuxtLink>
+          </li>
+        </ul>
       </ul>
-      <ul class="inline">
-        <li v-for="topic in work.topics" :key="topic">
-          <NuxtLink
-            :to="{
-              name: 'topics.slug',
-              params: { slug: topic.split(' ').join('-'), topic: topic },
-            }"
-          >
-            #{{ topic }}
-          </NuxtLink>
-        </li>
-      </ul>
-    </ul>
-
-    <nuxt-content :document="work" />
-  </div>
+    </header>
+    <article>
+      <nuxt-content :document="work" />
+    </article>
+  </main>
 </template>
 <script>
 export default {

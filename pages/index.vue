@@ -1,8 +1,8 @@
 <template>
-  <div class="index">
+  <main class="index">
     <h1>Winter 2020</h1>
     <WorksCards :works="works" />
-  </div>
+  </main>
 </template>
 <script>
 export default {

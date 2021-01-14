@@ -1,8 +1,8 @@
 <template>
-  <div class="person">
+  <main class="person">
     <h1>{{ params.person }}</h1>
     <WorksCards :works="works" />
-  </div>
+  </main>
 </template>
 <script>
 export default {

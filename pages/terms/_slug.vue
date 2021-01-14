@@ -1,8 +1,8 @@
 <template>
-  <div class="terms">
+  <main class="terms">
     <h1>Terms Winter 2020</h1>
     <WorksCards :works="works" />
-  </div>
+  </main>
 </template>
 <script>
 export default {

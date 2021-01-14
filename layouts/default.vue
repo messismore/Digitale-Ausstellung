@@ -1,11 +1,14 @@
 <template>
   <div class="default">
-    <a class="udk-logo" href="https://www.udk-berlin.de/studium/architektur/">
-      <img src="~/assets/images/udk-logo.svg" />
-    </a>
-    <nuxtLink class="home" to="/">Architecture Theses</nuxtLink>
+    <header>
+      <a class="udk-logo" href="https://www.udk-berlin.de/studium/architektur/">
+        <img src="~/assets/images/udk-logo.svg" />
+      </a>
+      <nuxtLink class="home" to="/">Architecture Theses</nuxtLink>
+    </header>
+
     <Nuxt />
-    Imprint
+    <footer>Imprint</footer>
   </div>
 </template>
 

@@ -1,8 +1,8 @@
 <template>
-  <div class="topic">
+  <main class="topic">
     <h1>#{{ params.topic }}</h1>
     <WorksCards :works="works" />
-  </div>
+  </main>
 </template>
 <script>
 export default {

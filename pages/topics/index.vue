@@ -1,5 +1,5 @@
 <template>
-  <div class="topics">
+  <main class="topics">
     <h1>Topics</h1>
     <ul>
       <li v-for="topic in topics" :key="topic">
@@ -13,7 +13,7 @@
         </NuxtLink>
       </li>
     </ul>
-  </div>
+  </main>
 </template>
 <script>
 export default {
