@@ -17,4 +17,4 @@ image: image-102-puzzle.jpg
 
 # Abbau Aufbau
 
-![](/works/Henschel-Abbau-Aufbau/image-102-puzzle.jpg)
+![](/works/Christoph-Henschel-Abbau-Aufbau/image-102-puzzle.jpg)

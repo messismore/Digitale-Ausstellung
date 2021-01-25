@@ -17,4 +17,4 @@ image: image-143-model-view.jpg
 
 # Wiederaufbau
 
-![](/works/Müller-Syring-Wiederaufbau/image-143-model-view.jpg)
+![](/works/Anja-Müller-Syring-Wiederaufbau/image-143-model-view.jpg)

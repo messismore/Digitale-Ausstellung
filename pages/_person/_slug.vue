@@ -53,7 +53,10 @@
 <script>
 export default {
   async asyncData({ $content, params }) {
-    const work = await $content('works', params.resource).fetch()
+    const work = await $content(
+      'works',
+      `${params.person}-${params.slug}`
+    ).fetch()
     return { work }
   },
 }

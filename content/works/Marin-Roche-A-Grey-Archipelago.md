@@ -17,7 +17,7 @@ image: image-1-bvg.jpg
 
 # A Grey Archipelago
 
-![A bus and a yellow scooter plow through the flooded streets of Berlin.](/works/Roche-A-Grey-Archipelago/image-1-bvg.jpg)
+![A bus and a yellow scooter plow through the flooded streets of Berlin.](/works/Marin-Roche-A-Grey-Archipelago/image-1-bvg.jpg)
 
 ## Flood
 
