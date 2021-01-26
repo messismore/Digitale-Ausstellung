@@ -51,12 +51,14 @@ We can also use standard HTML and even Vue components in our Markdown files:
 For more control over our layout, we can position elements according to a 5-column CSS grid. We achieve this with utility classes modelled after Tailwind CSS. https://tailwindcss.com/docs/grid-column
 
 ```markdown
-<div class="col-start-1 col-end-3"><img src="/works/Beermann-To-Make-It-Home/image-001-pacific-homes-logo.png"></img></div>
-<p class="col-start-3">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus viverra purus mollis, lobortis urna et, maximus purus. Praesent ac ipsum gravida, aliquet ipsum ut, convallis risus. Sed eu ullamcorper erat. Nullam in ipsum fermentum, pulvinar velit nec, ultricies nulla. Nam finibus orci pulvinar, porta urna at, dignissim arcu.</p>
+## Heading
+
+<div class="col-start-1 col-end-3">Proin consectetur viverra molestie. Cras quis risus eu tortor fermentum tempus. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Curabitur congue erat eget porta rhoncus. Aenean sodales mauris leo. Suspendisse eget tellus laoreet, pulvinar libero at, luctus felis. Donec non sollicitudin tellus, eget molestie erat. Mauris nec mauris at risus sodales ultrices at eget nisi. In a dapibus justo. Nam et tempus quam. Aenean non lacus auctor ex mattis consequat sed sed ex. Sed porttitor nec nisl id porttitor.</div>
+<div class="col-start-3 col-end-6"><img src="/works/First-Name-Surname-Title-of-the-Work/image-2-boullée.jpg"></img>Pellentesque nisl ante.</div>
 ```
 
-![Resulting layout](/static/source/layout-example-1.svg)
+![Resulting layout](/static/source/layout-example-1.png)
 
 ## Example Layout
 
-![A possible layout](/static/source/layout-example-2.svg)
+![A possible layout](/static/source/layout-example-2.png)
