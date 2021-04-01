@@ -14,7 +14,8 @@
           },
         }"
       >
-        <img :src="`/works/${work.slug}/${work.image}`" />
+        <img v-if="work.image" :src="`/works/${work.slug}/${work.image}`" />
+        <div v-else id="img-placeholder"></div>
         <h2>{{ work.title }}</h2>
         <p>{{ work.author }}</p>
       </NuxtLink>
@@ -96,7 +97,9 @@ ul.WorksCards {
     margin-right: 0;
   }
 
-  img {
+  img,
+  #img-placeholder {
+    background: black;
     object-fit: cover;
     height: 40vh;
     max-height: calc(100vw - 2 * var(--step-1));
