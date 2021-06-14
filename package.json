@@ -21,9 +21,9 @@
   },
   "dependencies": {
     "@fontsource/space-grotesk": "^4.1.0",
-    "@nuxt/content": "^1.9.0",
+    "@nuxt/content": "^1.14.0",
     "core-js": "^3.6.5",
-    "nuxt": "^2.14.6"
+    "nuxt": "^2.15.7"
   },
   "devDependencies": {
     "@nuxtjs/eslint-config": "^3.1.0",
