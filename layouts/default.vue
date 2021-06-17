@@ -8,7 +8,9 @@
     </header>
 
     <Nuxt />
-    <footer>Imprint</footer>
+    <footer>
+      <a href="https://www.udk-berlin.de/schnellzugriff/impressum/">Imprint</a>
+    </footer>
   </div>
 </template>
 
