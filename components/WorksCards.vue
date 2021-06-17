@@ -14,7 +14,8 @@
           },
         }"
       >
-        <img :src="`/works/${work.slug}/${work.image}`" />
+        <img v-if="work.image" :src="`/works/${work.slug}/${work.image}`" />
+        <div v-else class="img-placeholder"></div>
         <h2>{{ work.title }}</h2>
         <p>{{ work.author }}</p>
       </NuxtLink>
@@ -96,7 +97,8 @@ ul.WorksCards {
     margin-right: 0;
   }
 
-  img {
+  img,
+  .img-placeholder {
     object-fit: cover;
     height: 40vh;
     max-height: calc(100vw - 2 * var(--step-1));
@@ -108,6 +110,12 @@ ul.WorksCards {
     font-family: Space Grotesk;
     font-weight: 700;
     font-size: var(--step-0);
+  }
+
+  .img-placeholder {
+    // border: solid black 0.25rem;
+    background-color: whitesmoke;
+    box-sizing: border-box;
   }
 }
 </style>

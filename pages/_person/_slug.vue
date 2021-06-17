@@ -77,6 +77,9 @@ export default {
     font-weight: 700;
     margin-top: var(--step-5);
   }
+  figure {
+    margin: 0;
+  }
   img {
     object-fit: contain;
     width: 100%;
@@ -93,12 +96,14 @@ export default {
   }
 
   p {
+    font-size: var(--step--2);
+    line-height: var(--step-0);
     max-width: 80ch;
-    // margin: 0;
+    margin: 0;
   }
 
   p + p {
-    margin: 0;
+    margin-top: var(--step--5);
   }
 
   .nuxt-content {
