@@ -26,6 +26,7 @@ export default {
   buildModules: [
     // https://go.nuxtjs.dev/eslint
     '@nuxtjs/eslint-module',
+    '@nuxt/image',
   ],
 
   // Modules (https://go.nuxtjs.dev/config-modules)
@@ -41,7 +42,12 @@ export default {
   // Content module configuration (https://go.nuxtjs.dev/config-content)
   content: {
     liveEdit: false,
+    markdown: {
+      rehypePlugins: ['~/plugins/rehype-use-nuxt-picture.js'],
+    },
   },
+
+  image: { staticFilename: '[publicPath]/images/[name]-[hash][ext]' },
 
   // Build Configuration (https://go.nuxtjs.dev/config-build)
   build: {},
