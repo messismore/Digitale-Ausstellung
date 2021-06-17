@@ -5,16 +5,15 @@
         :to="{
           name: 'person.slug',
           params: {
-            /*
-              We want our urls in the form of '/Full-Name/Work' rather than the filename of the .md file. That's why we don't use work.slug as the slug but rather pass the filename as a parameter called resource.
-            */
             person: work.author.split(' ').join('-'),
             slug: work.title.split(' ').join('-'),
-            resource: work.slug,
           },
         }"
       >
-        <img v-if="work.image" :src="`/works/${work.slug}/${work.image}`" />
+        <nuxt-picture
+          v-if="work.image"
+          :src="`/works/${work.slug}/${work.image}`"
+        />
         <div v-else class="img-placeholder"></div>
         <h2>{{ work.title }}</h2>
         <p>{{ work.author }}</p>
