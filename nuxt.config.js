@@ -47,7 +47,10 @@ export default {
     },
   },
 
-  image: { staticFilename: '[publicPath]/images/[name]-[hash][ext]' },
+  image: {
+    dir: 'assets/images',
+    staticFilename: '[publicPath]/images/[name]-[hash][ext]',
+  },
 
   // Build Configuration (https://go.nuxtjs.dev/config-build)
   build: {},
