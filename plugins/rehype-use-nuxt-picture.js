@@ -5,9 +5,10 @@ const visit = require('unist-util-visit')
 module.exports = (options) => (tree) => {
   visit(
     tree,
-    // visit img tags
-    (node) => node.tagName === 'img',
+    // visit img tags, skip those that contain an SVG
+    (node) => node.tagName === 'img' && node.properties.src.split('.').pop() !== 'svg',
     (node) => {
+      console.log(node.properties.src.split('.').pop())
       node.tagName = 'nuxt-picture'
       /*
       Nuxt/Content does the right thing and URI-encodes the paths of our
